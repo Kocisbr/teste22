@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagem com Botão Sobreposto</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 1px;
+        }
+
+        .imagem-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .imagem-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .botao-link {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .botao-link:hover {
+            background-color: rgba(0, 86, 179, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+     <div class="imagem-container">
+        <!-- Imagem local -->
+        <img src=hartschoolprincipal.jpg alt="Imagem Local">
+
+        <!-- Botão sobreposto -->
+        <a href="https://kocisbr.github.io/teste22" target="_blank" class="botao-link">Acessar a HARTSCHOOL</a>
+    </div>
+
+</body>
+</html>
